@@ -1,42 +1,27 @@
-# Intégration LSC Camera pour Home Assistant
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)  
+[![GitHub release](https://img.shields.io/github/release/tonpseudo/lsc_camera.svg)](https://github.com/tonpseudo/lsc_camera/releases/)  
+[![HA integration usage](https://img.shields.io/badge/dynamic/json?color=41BDF5&logo=home-assistant&label=integration%20usage&suffix=%20installs&cacheSeconds=15600&url=https://analytics.home-assistant.io/custom_integrations.json&query=$.lsc_camera.total)](https://analytics.home-assistant.io/custom_integrations.json)
 
-Bonjour, voici mon projet.  
-Le but est d’intégrer les caméras de la marque LSC (trouvées chez Action), rootées via le projet de @guino [LSCOutdoor1080P](https://github.com/guino/LSCOutdoor1080P), directement dans Home Assistant.  
+# Home Assistant - LSC Camera Integration
 
-Le projet est assez simple et manque d’améliorations, c’est mon premier projet d’intégration Home Assistant et je ne connais pas du tout Python.  
-N’hésitez pas à me faire part de vos idées pour l’améliorer !
-
----
-
-## Description
-
-Cette intégration personnalisée permet d’ajouter et de contrôler les caméras IP rootées de la marque LSC dans Home Assistant.  
-Elle supporte le streaming vidéo via RTSP, le contrôle des mouvements de la caméra (haut, bas, gauche, droite),  
-la synchronisation de l’heure via Telnet, ainsi que l’activation/désactivation de Telnet via HTTP.
+Intégration personnalisée pour intégrer les caméras IP LSC (marque Action) dans Home Assistant, basée sur le projet [LSCOutdoor1080P de @guino](https://github.com/guino/LSCOutdoor1080P).
 
 ---
 
 ## Fonctionnalités principales
 
-- **Streaming vidéo en direct**  
-  Visualisez le flux vidéo principal via RTSP avec prise en charge FFmpeg.
-
-- **Contrôle de la caméra** (uniquement sur caméras 360°)  
-  Boutons pour déplacer la caméra vers le haut, bas, gauche et droite.
-
-- **Synchronisation de l’heure**  
-  Bouton pour synchroniser l’heure de la caméra avec celle du serveur Home Assistant via Telnet.
-
-- **Activation/désactivation de Telnet**  
-  Commandes HTTP pour activer ou désactiver Telnet sur la caméra.
+- Streaming vidéo en direct via RTSP avec FFmpeg  
+- Contrôle PTZ (haut, bas, gauche, droite) pour caméras 360°  
+- Synchronisation de l’heure via Telnet  
+- Activation/désactivation de Telnet via HTTP  
 
 ---
 
 ## Prérequis
 
-- Home Assistant version 2024.1.0 ou ultérieure  
+- Home Assistant version 2024.1.0 ou supérieure  
 - Accès réseau à la caméra LSC (IP, utilisateur, mot de passe)  
-- Port Telnet (par défaut 24) ouvert si vous utilisez la synchronisation de l’heure ou le toggle Telnet
+- Port Telnet (par défaut 24) ouvert pour synchronisation heure ou toggle Telnet
 
 ---
 
@@ -44,37 +29,29 @@ la synchronisation de l’heure via Telnet, ainsi que l’activation/désactivat
 
 ### Via HACS (recommandée)
 
-1. Ouvrez **HACS** → **Intégrations** → cliquez sur **+**  
-2. Choisissez **Dépôt personnalisé**  
-3. Entrez l’URL du dépôt :  
-   `https://github.com/yourusername/lsc_camera`  
-4. Sélectionnez **Intégration** comme type et validez  
-5. Installez l’intégration depuis HACS  
-6. Redémarrez Home Assistant
+1. Ouvrir **HACS** → **Intégrations** → cliquer sur **+**  
+2. Ajouter un dépôt personnalisé avec l’URL :  
+   `https://github.com/tonpseudo/lsc_camera`  
+3. Installer l’intégration et redémarrer Home Assistant
 
-### Installation manuelle
+### Manuelle
 
-1. Clonez ou téléchargez ce dépôt GitHub  
-2. Copiez le dossier `lsc_camera` dans `custom_components` de Home Assistant  
-3. Redémarrez Home Assistant
+1. Cloner/dézipper ce dépôt  
+2. Copier le dossier `lsc_camera` dans `custom_components/` de Home Assistant  
+3. Redémarrer Home Assistant
 
 ---
 
 ## Configuration
 
-### Ajout via l’interface utilisateur
+### Interface utilisateur
 
-1. Allez dans **Paramètres** → **Appareils et services** → cliquez sur **Ajouter une intégration**  
-2. Recherchez **LSC Camera**  
-3. Entrez :  
-   - **Adresse IP** : IP locale de la caméra  
-   - **Nom d’utilisateur**  
-   - **Mot de passe**  
-   - **Nom de l’appareil** (optionnel)  
-   - **Caméra 360°** : cochez si la caméra supporte les commandes de mouvement  
-4. Validez, l’intégration est créée, les entités caméra et boutons apparaissent.
+1. Aller dans **Paramètres** → **Appareils et services** → **Ajouter une intégration**  
+2. Chercher **LSC Camera**  
+3. Saisir IP, login, mot de passe, nom, et activer caméra 360° si besoin  
+4. Valider, l’intégration s’ajoute avec les entités
 
-### Exemple YAML (pour utilisateurs avancés)
+### YAML (option avancée)
 
 ```yaml
 lsc_camera:
