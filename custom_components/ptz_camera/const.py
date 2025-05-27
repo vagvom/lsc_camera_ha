@@ -1,0 +1,5 @@
+DOMAIN = "lsc_camera"
+CONF_DEVICE_NAME = "device_name"
+CONF_IP = "ip_address"
+CONF_USERNAME = "username"
+CONF_PASSWORD = "password"
