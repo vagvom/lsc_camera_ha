@@ -61,6 +61,21 @@ lsc_camera:
   device_name: Living Room Camera
   is_360: true
 ```
+---
+
+## License and Usage
+
+This project is distributed under the **GNU GPLv3** license, which means the code is free and open source. You may copy, modify, and redistribute it as long as you comply with the license terms.
+
+**Warning:** Any commercial use of this code (selling, integrating into a paid product, etc.) requires prior agreement with the author (`vagvom`).
+
+The goal is to keep the project free while protecting the work from unauthorized commercial exploitation.
+
+---
+
+
+
+
 
 ---
 
@@ -127,3 +142,17 @@ lsc_camera:
   device_name: Caméra Salon
   is_360: true
 ```
+Voici un petit paragraphe que tu peux ajouter dans ton README, par exemple dans une section **Licence** ou **À propos** :
+
+---
+
+## Licence et utilisation
+
+Ce projet est distribué sous licence **GNU GPLv3**, ce qui signifie que le code est libre et ouvert. Vous pouvez le copier, le modifier et le redistribuer tant que vous respectez les termes de la licence.
+
+**Attention :** toute utilisation commerciale de ce code (vente, intégration dans un produit payant, etc.) doit faire l'objet d'un accord préalable avec l'auteur (`vagvom`).
+
+L’objectif est de garantir que le projet reste libre tout en protégeant le travail réalisé contre une exploitation commerciale non autorisée.
+
+---
+
