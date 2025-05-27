@@ -1,9 +1,5 @@
 ## 🇬🇧 English Version
 
-[![hacs\_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
-[![GitHub release](https://img.shields.io/github/release/tonpseudo/lsc_camera.svg)](https://github.com/tonpseudo/lsc_camera/releases/)
-[![HA integration usage](https://img.shields.io/badge/dynamic/json?color=41BDF5\&logo=home-assistant\&label=integration%20usage\&suffix=%20installs\&cacheSeconds=15600\&url=https://analytics.home-assistant.io/custom_integrations.json\&query=\$.lsc_camera.total)](https://analytics.home-assistant.io/custom_integrations.json)
-
 # Home Assistant - LSC Camera Integration
 
 Custom integration to connect LSC (Action brand) IP cameras to Home Assistant, based on [LSCOutdoor1080P by @guino](https://github.com/guino/LSCOutdoor1080P).
@@ -69,10 +65,6 @@ lsc_camera:
 ---
 
 ## 🇫🇷 Version Française
-
-[![hacs\_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
-[![GitHub release](https://img.shields.io/github/release/tonpseudo/lsc_camera.svg)](https://github.com/tonpseudo/lsc_camera/releases/)
-[![HA integration usage](https://img.shields.io/badge/dynamic/json?color=41BDF5\&logo=home-assistant\&label=integration%20usage\&suffix=%20installs\&cacheSeconds=15600\&url=https://analytics.home-assistant.io/custom_integrations.json\&query=\$.lsc_camera.total)](https://analytics.home-assistant.io/custom_integrations.json)
 
 # Home Assistant - Intégration Caméra LSC
 
