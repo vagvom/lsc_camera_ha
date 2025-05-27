@@ -26,6 +26,7 @@ Intégration personnalisée pour intégrer les caméras IP LSC (marque Action) d
 ---
 
 ## Installation
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=lsc_camera)
 
 ### Via HACS (recommandée)
 
