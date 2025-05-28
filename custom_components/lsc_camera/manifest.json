@@ -2,7 +2,7 @@
   "domain": "lsc_camera",
   "name": "LSC Camera",
   "version": "1.0.0",
-  "documentation": "",
+  "documentation": "https://github.com/vagvom/lsc_camera_ha",
   "iot_class": "local_push",
   "requirements": [
     "requests"
