@@ -29,7 +29,7 @@ Custom integration to connect LSC (Action brand) IP cameras to Home Assistant, b
 
 1. Open **HACS** → **Integrations** → click **+**
 2. Add this custom repository:
-   `https://github.com/tonpseudo/lsc_camera`
+   `https://github.com/vagvom/lsc_camera`
 3. Install the integration and restart Home Assistant
 
 ### Manual Installation
@@ -42,7 +42,7 @@ Custom integration to connect LSC (Action brand) IP cameras to Home Assistant, b
 
 ## Configuration
 
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=lsc_camera)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=vagvom&repository=lsc_camera_ha&category=integration)
 
 ### UI Setup
 
@@ -123,7 +123,7 @@ Intégration personnalisée pour intégrer les caméras IP LSC (marque Action) d
 
 ## Configuration
 
-[![Ouvrez votre instance Home Assistant et commencez la configuration d'une nouvelle intégration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=lsc_camera)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=vagvom&repository=lsc_camera_ha&category=integration)
 
 ### Interface utilisateur
 
