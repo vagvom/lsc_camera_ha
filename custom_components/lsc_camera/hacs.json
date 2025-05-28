@@ -1,0 +1,8 @@
+{
+  "name": "LSC Camera",
+  "domain": "lsc_camera_ha",
+  "documentation": "https://github.com/vagvom/lsc_camera_ha",
+  "codeowners": ["@vagvom"],
+  "requirements": [],
+  "version": "1.0.0"
+}
